@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "nombre": "Ford Mustang GT 1967",
+    "precio": 45000,
+    "stock": 5,
+    "categoria": "clasicos",
+    "descripcion": "Un ícono de la industria automotriz estadounidense. El Mustang GT 1967 combina un diseño musculoso, líneas agresivas y un potente espíritu deportivo. Su estilo clásico lo convierte en una pieza muy buscada por coleccionistas.",
+    "imagen": "https://i.ibb.co/JwGmD0mk/ford-mustang.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Chevrolet Camaro SS 1969",
+    "precio": 52000,
+    "stock": 3,
+    "categoria": "clasicos",
+    "descripcion": "Representante de la legendaria generación de muscle cars americanos. El Camaro SS 1969 destaca por su imponente carrocería, su personalidad deportiva y su potente motorización V8. Un clásico ideal para los amantes de la velocidad.",
+    "imagen": "https://i.ibb.co/gbcXGXQj/Chevrolet-Camaro-SS-1969.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Volkswagen Beetle 1963",
+    "precio": 38000,
+    "stock": 8,
+    "categoria": "clasicos",
+    "descripcion": "Un automóvil emblemático reconocido mundialmente por su inconfundible silueta redondeada. El Beetle 1963 combina simplicidad mecánica, personalidad y encanto vintage. Una auténtica pieza de la historia del automóvil.",
+    "imagen": "https://i.ibb.co/p6VDZHmX/Volkswagen-Beetle-1963.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Porsche 911 Carrera",
+    "precio": 65000,
+    "stock": 4,
+    "categoria": "deportivos",
+    "descripcion": "Un referente de la ingeniería deportiva alemana. El Porsche 911 Carrera se distingue por su diseño atemporal, excelente comportamiento dinámico y personalidad única. Una combinación de elegancia, prestaciones y tradición automovilística.",
+    "imagen": "https://i.ibb.co/6Rz88YXT/Porsche-911-Carrera.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Ferrari F40",
+    "precio": 75000,
+    "stock": 2,
+    "categoria": "superdeportivos",
+    "descripcion": "Una de las creaciones más emblemáticas de Ferrari. El F40 representa la esencia de los superdeportivos de los años ochenta, con una carrocería aerodinámica, construcción liviana y un extraordinario motor V8 biturbo.",
+    "imagen": "https://i.ibb.co/ZR7JBYRj/1-f40.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Lamborghini Countach",
+    "precio": 70000,
+    "stock": 3,
+    "categoria": "superdeportivos",
+    "descripcion": "Un superdeportivo italiano que revolucionó el diseño automotriz con sus líneas angulosas y sus características puertas de apertura vertical. El Lamborghini Countach combina exclusividad, potencia y una presencia inconfundible.",
+    "imagen": "https://i.ibb.co/BVSv8MW1/Lamborghini-Countach.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Chevrolet Corvette Stingray",
+    "precio": 58000,
+    "stock": 6,
+    "categoria": "deportivos",
+    "descripcion": "Un clásico deportivo estadounidense que combina elegancia y potencia. El Corvette Stingray se destaca por su diseño aerodinámico, sus líneas estilizadas y su espíritu de competición. Una joya para los fanáticos de Chevrolet.",
+    "imagen": "https://i.ibb.co/4wCv4jfG/Chevrolet-Corvette-Stingray.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Toyota Supra MK4",
+    "precio": 62000,
+    "stock": 4,
+    "categoria": "deportivos",
+    "descripcion": "Un ícono japonés de los años noventa, reconocido por su extraordinario potencial de preparación y su diseño inconfundible. El Supra MK4 combina ingeniería confiable, prestaciones deportivas y una enorme popularidad entre los entusiastas.",
+    "imagen": "https://i.ibb.co/jpRnXtj/Toyota-Supra-MK4.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Nissan Skyline GT-R R34",
+    "precio": 68000,
+    "stock": 5,
+    "categoria": "deportivos",
+    "descripcion": "Una leyenda de la ingeniería japonesa y uno de los deportivos más admirados de su generación. El Skyline GT-R R34 combina tecnología avanzada, tracción integral y un reconocido motor RB26DETT de seis cilindros.",
+    "imagen": "https://i.ibb.co/cKxWkGZL/Nissan-Skyline-GT-R-R34.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "McLaren F1",
+    "precio": 85000,
+    "stock": 2,
+    "categoria": "superdeportivos",
+    "descripcion": "Uno de los superdeportivos más extraordinarios de todos los tiempos. El McLaren F1 se distingue por su puesto de conducción central, su motor BMW V12 atmosférico y una ingeniería orientada a lograr prestaciones excepcionales.",
+    "imagen": "https://i.ibb.co/mCmLr04q/Mc-Laren-F1.jpg"
+  }
+]

@@ -1,0 +1,73 @@
+
+[
+  {
+    "id": 1,
+    "nombre": "Ford Mustang GT 1967",
+    "precio": 45000,
+    "stock": 5,
+    "imagen": "https://i.ibb.co/JwGmD0mk/ford-mustang.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Chevrolet Camaro SS 1969",
+    "precio": 52000,
+    "stock": 3,
+    "imagen": "/images/ChevroletCamaro1969.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Volkswagen Beetle 1963",
+    "precio": 38000,
+    "stock": 8,
+    "imagen": "/images/VolkswagenBeetle1963.png"
+  },
+  {
+    "id": 4,
+    "nombre": "Porsche 911 Carrera",
+    "precio": 65000,
+    "stock": 4,
+    "imagen": "/images/Porsche911Carrera.png"
+  },
+  {
+    "id": 5,
+    "nombre": "Ferrari F40",
+    "precio": 75000,
+    "stock": 2,
+    "imagen": "/images/FerrariF40.png"
+  },
+  {
+    "id": 6,
+    "nombre": "Lamborghini Countach",
+    "precio": 70000,
+    "stock": 3,
+    "imagen": "/images/LamborghiniCountach.png"
+  },
+  {
+    "id": 7,
+    "nombre": "Chevrolet Corvette Stingray",
+    "precio": 58000,
+    "stock": 6,
+    "imagen": "/images/CorvetteStingray.png"
+  },
+  {
+    "id": 8,
+    "nombre": "Toyota Supra MK4",
+    "precio": 62000,
+    "stock": 4,
+    "imagen": "/images/ToyotaSupraMK4.png"
+  },
+  {
+    "id": 9,
+    "nombre": "Nissan Skyline GT-R R34",
+    "precio": 68000,
+    "stock": 5,
+    "imagen": "/images/NissanSkylineR34.png"
+  },
+  {
+    "id": 10,
+    "nombre": "McLaren F1",
+    "precio": 85000,
+    "stock": 2,
+    "imagen": "/images/McLarenF1.png"
+  }
+]
