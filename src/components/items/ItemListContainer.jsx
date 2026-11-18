@@ -63,8 +63,8 @@ const  ItemListContainer = ({ Mensaje })=> {
  if (cargando) return <p>Cargando productos...</p>;
  
   return (
-        <div>
-            <h2>{Mensaje}</h2>
+        <div  >
+            <h2  className={styles.headerPanel} >{Mensaje}</h2>
             <div  className={styles.productos} >
                 <ItemList productos={productos} />
             </div>

@@ -41,7 +41,7 @@ const Header = () => {
               </>
             ) : (
               <li>
-                <Link to="/login">Login</Link>
+                <Link to="/login"  style={{ color: "white" }}>Login</Link>
               </li>
             )}
           </ul>
