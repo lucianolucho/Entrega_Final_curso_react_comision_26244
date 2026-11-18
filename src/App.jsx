@@ -13,6 +13,8 @@ import Login from "./components/pages/Login";
 import Registro from "./components/pages/Registro";
 import RutaProtegida from "./components/RutaProtegida/RutaProtegida";
 
+import Home from "./components/pages/Home";
+
 // capitulo 7
 import { Routes, Route } from 'react-router-dom';
 
@@ -20,7 +22,7 @@ const App = () => {
   return (
     <Routes>{/*envuelve a las demás para mostrar Header y Footer siempre */}
       <Route element={<Layout />}>
-        <Route path="/" element={<h1>Página de Inicio</h1>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/productos" element={<ItemListContainer Mensaje={"Productos destacados"} />} />
         <Route path="/producto/:id" element={<DetalleProducto Mensaje={"Productos destacados"} />} />
         <Route path="/carrito" element={<Carrito />} />

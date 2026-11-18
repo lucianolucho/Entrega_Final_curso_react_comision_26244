@@ -1,0 +1,158 @@
+.homeContainer {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #111827;
+  width: 100%;
+}
+
+/* --- Hero Banner Principal --- */
+.heroBanner {
+  background: linear-gradient(135deg, #0b57d0 0%, #1e40af 100%);
+  color: #ffffff;
+  padding: 4.5rem 2rem;
+  text-align: center;
+  border-radius: 16px;
+  margin: 1.5rem auto;
+  max-width: 1200px;
+  box-shadow: 0 10px 30px rgba(11, 87, 208, 0.2);
+}
+
+.heroContent {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.heroTitle {
+  font-size: 2.75rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.heroSubtitle {
+  font-size: 1.15rem;
+  margin: 0;
+  color: #dbeafe;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.btnHero {
+  background-color: #ffffff;
+  color: #0b57d0;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+  margin-top: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btnHero:hover {
+  background-color: #f8fafc;
+  transform: translateY(-2px);
+}
+
+/* --- Sección de Características / Beneficios --- */
+.featuresGrid {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.featureCard {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-3px);
+}
+
+.featureIcon {
+  background-color: #dbeafe;
+  color: #0b57d0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+}
+
+.featureTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: #111827;
+}
+
+.featureText {
+  font-size: 0.92rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* --- Sección de Productos Destacados en el Home --- */
+.seccionProductos {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+.seccionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.seccionTitulo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.verTodoLink {
+  color: #0b57d0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.15s ease;
+}
+
+.verTodoLink:hover {
+  text-decoration: underline;
+  color: #084298;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .heroBanner {
+    padding: 3rem 1.25rem;
+    margin: 1rem;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+}
