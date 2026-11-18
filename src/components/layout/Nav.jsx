@@ -25,7 +25,7 @@ const Nav = () => {
           </Link>
         </li>
         <li>
-          <Link to="/" >
+          <Link to="/#contacto" >
             Contacto
           </Link>
         </li>
