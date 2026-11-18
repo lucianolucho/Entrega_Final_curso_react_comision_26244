@@ -2,34 +2,20 @@ import { useState, useEffect } from 'react';
 import { db } from '../../firebase/config';
 import { collection, getDocs, deleteDoc, doc } from 'firebase/firestore';
 
-
-/**/
 import FormularioProductoContainer from '../FormularioProducto/FormularioProductoContainer';
 import styles from './Panel.module.css';
-/**/
 
 const Panel = () => {
   const [productos, setProductos] = useState([]);
-
-  // se usa el diseño brindado por la catedra pero solo se va a msotrar la solapa de "producto"
   const [tabActivo, setTabActivo] = useState('productos');
-
-  // se usará para agregar y editar el producto un dialogo modal
-  //El modo del dialogo modal : editar/agregar
   const [productoAEditar, setProductoAEditar] = useState(null);
-  //estado que maneja la visibilidad del dialogo modal
   const [modalAbierto, setModalAbierto] = useState(false);
 
-
-
-  //levantatodos los productos
+  // Levantar todos los productos
   useEffect(() => {
     const fetchProductos = async () => {
       try {
-        // traemos la referencia a la abse
         const productosRef = collection(db, "productos");
-
-        // con la referencia obtenemos los documentos
         const resp = await getDocs(productosRef);
 
         setProductos(
@@ -43,15 +29,12 @@ const Panel = () => {
     fetchProductos();
   }, []);
 
-
-
   const eliminarProducto = async (id) => {
     const confirmacion = window.confirm("¿Está seguro de que desea eliminar este producto?");
     if (confirmacion) {
       try {
         const docRef = doc(db, "productos", id);
         await deleteDoc(docRef);
-        // Actualizamos el estado local para quitarlo de la lista en la UI
         setProductos(productos.filter((prod) => prod.id !== id));
         alert("Producto eliminado.");
       } catch (error) {
@@ -61,24 +44,20 @@ const Panel = () => {
     }
   };
 
-  // momento en que se dispone del dialogo para agregar producto
   const abrirModalAgregar = () => {
     setProductoAEditar(null);
     setModalAbierto(true);
   };
-  // momento en que se dispone del dialogo para editar producto
+
   const abrirModalEditar = (producto) => {
     setProductoAEditar(producto);
     setModalAbierto(true);
   };
 
-  // momento en que se dispone del dialogo no visibilizar el dialogo
   const cerrarModal = () => {
     setProductoAEditar(null);
     setModalAbierto(false);
   };
-
-
 
   const handleProductoGuardado = (productoGuardado, esEdicion) => {
     if (esEdicion) {
@@ -89,15 +68,26 @@ const Panel = () => {
     cerrarModal();
   };
 
-
   return (
-
-    <div>
-
-      <h2>Panel de Administración</h2>
-      {/* Formulario de producto */}
-      <FormularioProductoContainer />
-      <hr />
+    <div className={styles.contenedorPanel}>
+      {/* Cabecera del Panel */}
+      <div className={styles.headerPanel}>
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          width="28" 
+          height="28" 
+          viewBox="0 0 24 24" 
+          fill="none" 
+          stroke="currentColor" 
+          strokeWidth="2" 
+          strokeLinecap="round" 
+          strokeLinejoin="round"
+        >
+          <path d="M12 20h9" />
+          <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+        </svg>
+        <h2>Panel de Administración</h2>
+      </div>
 
       {/* PESTAÑAS */}
       <div className={styles.tabs}>
@@ -107,12 +97,10 @@ const Panel = () => {
         >
           Productos
         </button>
-
       </div>
 
-
       {tabActivo === 'productos' && (
-        <section>
+        <div className={styles.seccionContenido}>
           <div className={styles.sectionHeader}>
             <h3 className={styles.sectionTitle}>Listado de Productos</h3>
             <button className={styles.btnPrimary} onClick={abrirModalAgregar}>
@@ -146,7 +134,7 @@ const Panel = () => {
                       </td>
                       <td><strong>{prod.nombre}</strong></td>
                       <td>{prod.categoria || '-'}</td>
-                      <td>${prod.precio}</td>
+                      <td>${Number(prod.precio).toFixed(2)}</td>
                       <td style={{ textAlign: 'right' }}>
                         <button
                           className={styles.btnOutline}
@@ -166,14 +154,12 @@ const Panel = () => {
                 </tbody>
               </table>
             </div>
-          )
-          }
-        </section>
-      )
-      }
+          )}
+        </div>
+      )}
 
-     {/* Modal provisto por la catedra para editar y agregar productos*/}
-    {modalAbierto && (
+      {/* Modal para editar y agregar productos */}
+      {modalAbierto && (
         <div className={styles.modalOverlay} onClick={cerrarModal}>
           <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
             <div className={styles.modalHeader}>
@@ -191,30 +177,8 @@ const Panel = () => {
           </div>
         </div>
       )}
-
-
-      {/* Listado de productos */}
-      <h3>Lista de Productos</h3>
-      <ul>
-        {productos.map(prod => (
-          <li key={prod.id} style={{ marginBottom: '8px' }}>
-            {prod.nombre} - ${prod.precio}
-            <button
-              onClick={() => eliminarProducto(prod.id)}
-              style={{ marginLeft: '10px' }}
-            >
-              Eliminar
-            </button>
-          </li>
-        ))}
-      </ul>
-
-      <hr />
-
-
     </div>
   );
-
 };
 
 export default Panel;

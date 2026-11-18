@@ -1,4 +1,4 @@
-
+/**/
 
 .subtitulo {
     padding: 1rem 1rem 0 1rem;
@@ -10,4 +10,44 @@
     justify-content: space-around;
     align-items: center;
     padding:2rem;
+}/**/
+/*
+.contenedor {
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
+
+.titulo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  letter-spacing: -0.01em;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+/* --- Estados de carga y mensajes --- * /
+.estadoMensaje {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1.1rem;
+  color: #374151;
+  font-weight: 500;
+}
+*/
