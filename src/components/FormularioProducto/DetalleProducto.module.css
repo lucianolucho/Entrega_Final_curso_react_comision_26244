@@ -1,0 +1,140 @@
+.contenedorDetalle {
+  max-width: 950px;
+  margin: 3.5rem auto;
+  padding: 0 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* --- Cuerpo Principal del Detalle (Dos Columnas) --- */
+.cuerpoDetalle {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 2.5rem;
+  padding: 2.5rem;
+  align-items: center;
+}
+
+/* --- Contenedor de Imagen --- */
+.imagenWrapper {
+  width: 100%;
+  height: 380px;
+  background-color: #f8fafc;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid #f1f5f9;
+}
+
+.imagenProducto {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.imagenProducto:hover {
+  transform: scale(1.03);
+}
+
+/* --- Información del Producto --- */
+.infoProducto {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.infoProducto h2 {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.precio {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0b57d0;
+  margin: 0;
+}
+
+.stock {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #4b5563;
+  margin: 0;
+}
+
+.descripcion {
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
+/* --- Botón de Agregar al Carrito --- */
+.btnAgregar {
+  background-color: #0b57d0;
+  color: #ffffff;
+  border: none;
+  padding: 0.85rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  box-shadow: 0 4px 12px rgba(11, 87, 208, 0.25);
+  transition: background-color 0.15s ease, transform 0.1s ease;
+  margin-top: 0.75rem;
+  width: fit-content;
+}
+
+.btnAgregar:hover {
+  background-color: #084298;
+  transform: translateY(-1px);
+}
+
+/* --- Estados de Carga y Errores --- */
+.estadoMensaje {
+  text-align: center;
+  font-size: 1.15rem;
+  color: #4b5563;
+  margin: 5rem 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.errorMensaje {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* --- Responsive para tablets y celulares --- */
+@media (max-width: 768px) {
+  .cuerpoDetalle {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .imagenWrapper {
+    height: 280px;
+  }
+
+  .infoProducto h2 {
+    font-size: 1.5rem;
+  }
+
+  .btnAgregar {
+    width: 100%;
+  }
+}
