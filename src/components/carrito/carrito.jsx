@@ -1,5 +1,5 @@
 import { useCarrito } from '../context/CarritoContext';
-import styles from './Carrito_2.module.css';
+import styles from './Carrito.module.css';
 import { Link } from 'react-router-dom';
 
 const Carrito = () => {
